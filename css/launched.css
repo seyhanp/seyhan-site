@@ -2212,3 +2212,15 @@ ul.testimonial-list.filled blockquote:before {
 .reflection {
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottombottom, from(transparent), to(rgba(250, 250, 250, 0.1)));
 }
+#ss-table td img {
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 1px solid gray;
+  height: 150px;
+}
+#ss-table td label {
+  background-color: #ADDEE6;
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 0 5px;
+}
