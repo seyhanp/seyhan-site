@@ -2209,10 +2209,11 @@ ul.testimonial-list.filled blockquote:before {
   height: 150px;
 }
 #ss-table td label {
-  background-color: lightblue;
-  border: 2px solid green;
+  background-color: #ccc;
+  border: 1px solid gray;
   border-radius: 5px;
-  padding: 0 5px;
+  padding-left: 10px;
+  width: 138px;
 }
 .navbar .nav > li > a {
   color: white;
