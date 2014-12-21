@@ -79,5 +79,37 @@
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">stLight.options({publisher: "dbd6707b-5e08-4bf3-acb6-a7c689d75ed7", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
+	<script type="text/javascript">
+		var news_importer = {
+			getPosts : function(){
+				var feedURL = "http://seyhanp.blogspot.com/feeds/posts/default";
+				var paras = {
+				alt : 'json-in-script'
+			};
+
+			$.ajax({
+					url: feedURL,
+					type: 'get',
+					dataType: "jsonp",
+					success: news_importer.onGotPostData,
+					data: paras
+				});
+			},
+
+			onGotPostData : function(data){
+				var news = "";
+				var entries = data.feed.entry || [];
+				for (var i = 0; i < entries.length; ++i) {
+					var entry = entries[i];
+					var title = entry.title.$t;
+					var link = entry.link[1].href.replace("#comment-form", "");
+
+					news += "<li><span class='mark'><i class='icon-edit'></i></span><h4>" + title + "</h4><p>" + entry.content.$t.substring(0, 250) + "...</p><a class='btn btn-mini pull-right' href='"+link+"' target='_blank'>Devamı</a></li><hr/>"
+				}
+				$("#news").append("<ul class='mark-list'>" + news + "</ul>");
+			}
+		}
+	</script>
+
 </body>
 </html>
