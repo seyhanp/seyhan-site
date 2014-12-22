@@ -75,9 +75,19 @@
 		</div>
 	</footer>
 
+	<style type="text/css">
+		.updated {
+			background: #eee;
+			border-radius: 3px;
+			text-align: center;
+			border: #bbb solid 1px;
+		}
+	</style>
+
 	<script type="text/javascript">var switchTo5x=true;</script>
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">stLight.options({publisher: "dbd6707b-5e08-4bf3-acb6-a7c689d75ed7", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+	<script type="text/javascript" src="js/date.format.js"></script>
 
 	<script type="text/javascript">
 		var news_importer = {
@@ -91,6 +101,7 @@
 					url: feedURL,
 					type: 'get',
 					dataType: "jsonp",
+					cache: true,
 					success: news_importer.onGotPostData,
 					data: paras
 				});
@@ -102,9 +113,16 @@
 				for (var i = 0; i < entries.length; ++i) {
 					var entry = entries[i];
 					var title = entry.title.$t;
+					var updated = dateFormat(entry.updated.$t, "dd-mmmm-yyyy, dddd");
 					var link = entry.link[1].href.replace("#comment-form", "");
 
-					news += "<li><span class='mark'><i class='icon-edit'></i></span><h4>" + title + "</h4><p>" + entry.content.$t.substring(0, 250) + "...</p><a class='btn btn-mini pull-right' href='"+link+"' target='_blank'>Devamı</a></li><hr/>"
+					news += "<p>";
+				       news += "<div class='updated'>" + updated + "</div>";
+				       news += "<h4 style='color:#FF8000'>" + title + "</h4>";
+				       news += "<p>" + entry.content.$t.substring(0, 250) + "...</p>";
+				       news += "<a class='btn btn-mini pull-right' href='" + link + "' target='_blank'>Devamı</a>";
+				    news += "</p>";
+				    news += "<hr/>";
 				}
 				$("#news").append("<ul class='mark-list'>" + news + "</ul>");
 			}
