@@ -2225,3 +2225,9 @@ ul.testimonial-list.filled blockquote:before {
     color: white;
     background-color: black;
 }
+#news {
+  overflow-y: scroll;
+  height: 660px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}

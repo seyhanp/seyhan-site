@@ -113,7 +113,7 @@
 				for (var i = 0; i < entries.length; ++i) {
 					var entry = entries[i];
 					var title = entry.title.$t;
-					var updated = dateFormat(entry.updated.$t, "dd-mmmm-yyyy, dddd");
+					var updated = dateFormat(entry.published.$t, "dd-mmmm-yyyy, dddd");
 					var link = entry.link[1].href.replace("#comment-form", "");
 
 					news += "<p>";
