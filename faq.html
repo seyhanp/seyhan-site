@@ -1,0 +1,82 @@
+<div class="container">
+
+	<div class="row">
+		<div>
+			<h1>Sık Sorulan Sorular</h1>
+			<p class="lead">Daha önceden kullanıcıların yönelttiği bazı sorular ve bu sorulara ait cevapları bu kısımda bulabilirsiniz. Sizin de sorunuz olursa lütfen çekinmeden iletin.</p>
+		</div>
+
+		<p>
+			<p style="margin-top:35px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Neden bir masaüstü uygulaması değil?</h4>
+				Masaüstü uygulamalarının web tabanlı uygulamalara göre bazı sorunları var, bunlar;
+				<ol>
+					<li>Yeni çıkan sürüme ait güncellemelerin her bir client için ayrı ayrı yapılması zorunluluğu.</li>
+					<li>İşletim sistemleri arasında ciddi farklar olduğu için, her işletim sistemine has ayrı bir derleme, sürümleme ve dağıtım süreçlerinin takip edilmesinin zorluğu.</li>
+					<li>Cloud (Bulut) mimarisine uygun olmamaları (özellikle uygulama sunucunuzun farklı bir ağda olması gibi)</li>
+					<li>Sorun olduğunda uzaktan denetimlerinin zor olması.</li>
+					<li>Derleyici geliştiricilerin (oracle, microsoft...) daha çok web tabanlı teknolojilere yatırım yapmaları ile masaüstü bileşenlerinin giderek zayıflaması.</li>
+					<li>Mobil cihazlarda kullanılma seçeneklerinin olmaması.</li>
+				</ol>
+				bu gibi sorunlar yüzünden seyhan tarayıcı temelli olarak geliştirilmiştir.
+			</p>
+
+			<p style="margin-top:25px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Programı çalıştırmak için neden bir exe uzantılı dosya yok?</h4>
+				Bir üst kısımda verilen cevap bu soru için de geçerlidir. Burdaki ana amaç, seyhan'ın tüm işletim sistemlerinden tek bir paketleme yapısı ile çalışabilmesidir. Bilindiği gibi, exe uzantılı dosyalar sadece MS-Windows işletim sistemlerinde çalıştırılabilen uygulamalardır.
+			</p>
+
+			<p style="margin-top:25px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Uygulama web tabanlı olduğu için verilerimiz İnternet'e mi açılacak?</h4>
+				<strong>Elbette HAYIR!</strong>
+				<p>
+					seyhan' ın tarayıcı tabanlı olması bilgilerinizin internete açılacağı anlamına gelmez! Aksine bilgilerinize internet üzerinden erişilebilmesi için ekstra işlemler yapmanız gerekir, web sunucusu kurulumu gibi...
+				</p>
+				<p>
+					seyhan üç farklı yapıda kullanabilirsiniz;
+					<ol>
+					    <li>Kişisel bilgisayarınıza kurarak bireysel olarak kullanabilirsiniz. Bu durumda bilgilerinize sizden başka kimse erişemez. Bir kullanıcılı bir bilgisayar için Standart kurulum bu şekildedir.</li>
+					    <li>Ofisinizdeki bir bilgisayara / sunucuya kurarak birden fazla kullanıcı tek bir sunucuya bağlanabilirsiniz. Bu durumda ağınıza dahil ettiğiniz kullanıcılardan başkası bilgilerinize erişemez. Bir ve daha fazla kullanıcılı bir bilgisayar için Standart kurulum bu şekildedir.</li>
+					    <li>Uzak bir sunucuya kurabilirsiniz böylece tüm kullanıcılarınız istedikleri her yerden erişebilirler. Bunun için apache ya da nginx gibi bir web sunucusu kullanmanız gerekir. Bu durumda kullanıcı denetimleri için kullanabileceğiniz iki yol var;</li>
+					    <ul>
+					        <li>web sunucusunun sağladığı güvenlik ve erişim denetimleri</li>
+					        <li>seyhan' da tanımlanan kullanıcı izinleri</li>
+					    </ul>
+					</ol>
+				</p>
+				Doğru yapılandırma ile verilerinize sizden ya da erişimlerine izin verdiğiniz kullanıcılarınızdan başkası erişemez.
+			</p>
+
+			<p style="margin-top:25px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Neden bir kurulum paketi yok?</h4>
+				Kurulum işlemini olabildiğince basitleştirmek için seyhan zip dosyası halinde dağıtılır. Kullanıcılar zip dosyasını açıp hemen kullabilsinler diye bu şekilde düzenlenmiştir.
+			</p>
+
+			<p style="margin-top:25px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Herhangi bir kısıtlaması var mı, ilerde olabilir mi?</h4>
+				seyhan'ın herhangi bir kısıtlaması yoktur. İlerleyen zamanlarda da kısıtlanmayacaktır. 
+			</p>
+
+			<p style="margin-top:25px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Ücretli servis desteği alınabilir mi?</h4>
+				Evet, bunun için doğrudan mdumlupinar@gmail.com adresine bir mail atmanız yeterli olacaktır.
+			</p>
+
+			<p style="margin-top:25px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Ücretli servis desteği ile ne gibi hizmetler alınabilir?</h4>
+				<ul>
+					<li>Sıfırdan ya da hazır durumdaki uzak sunucunuza (yurtiçi / yurtdışı) uygulamanın kurulması ve tüm temel ayarlarının yapılması</li>
+					<li>Herhangi bir modülün eklenmesi</li>
+					<li>Yeni bir raporun eklenmesi</li>
+					<li>İşleyiş ile ilgili çok detay bilgilerin edinilmesi</li>
+					<li>Dökümünü yapmak istediğiniz fatura, makbuz, fiş... gibi belgelerinizin hazırlanması</li>
+				</ul>
+			</p>
+
+			<p style="margin-top:25px">
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Uygulamanın mobil sürümü çıkacak mı?</h4>
+				Bu istek kullanıcılardan gelecek taleplere göre ele alınacak.
+			</p>
+		</p>
+	</div>
+</div>
