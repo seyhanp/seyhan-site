@@ -13,34 +13,32 @@
 				<ol>
 					<li>Yeni çıkan sürüme ait güncellemelerin her bir client için ayrı ayrı yapılması zorunluluğu.</li>
 					<li>İşletim sistemleri arasında ciddi farklar olduğu için, her işletim sistemine has ayrı bir derleme, sürümleme ve dağıtım süreçlerinin takip edilmesinin zorluğu.</li>
-					<li>Cloud (Bulut) mimarisine uygun olmamaları (özellikle uygulama sunucunuzun farklı bir ağda olması gibi)</li>
+					<li>Cloud (bulut) mimarisine uygun olmamaları (özellikle uygulama sunucunuzun farklı bir ağda olması gibi)</li>
 					<li>Sorun olduğunda uzaktan denetimlerinin zor olması.</li>
 					<li>Derleyici geliştiricilerin (oracle, microsoft...) daha çok web tabanlı teknolojilere yatırım yapmaları ile masaüstü bileşenlerinin giderek zayıflaması.</li>
 					<li>Mobil cihazlarda kullanılma seçeneklerinin olmaması.</li>
 				</ol>
-				bu gibi sorunlar yüzünden seyhan tarayıcı temelli olarak geliştirilmiştir.
+				gibi sorunlar yüzünden seyhan web tabanlı olarak geliştirilmiştir.
 			</p>
 
 			<p style="margin-top:25px">
-				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Programı çalıştırmak için neden bir exe uzantılı dosya yok?</h4>
-				Bir üst kısımda verilen cevap bu soru için de geçerlidir. Burdaki ana amaç, seyhan'ın tüm işletim sistemlerinden tek bir paketleme yapısı ile çalışabilmesidir. Bilindiği gibi, exe uzantılı dosyalar sadece MS-Windows işletim sistemlerinde çalıştırılabilen uygulamalardır.
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Programı çalıştırmak için neden exe uzantılı bir dosya yok?</h4>
+				Bir üst kısımda verilen cevap bu soru için de geçerlidir. Burdaki ana amaç, seyhan'ın tüm işletim sistemlerinde tek bir paketleme yapısı ile çalışabilmesidir. Bilindiği gibi, exe uzantılı dosyalar sadece MS-Windows işletim sistemlerinde çalıştırılabilen uygulamalardır.
 			</p>
 
 			<p style="margin-top:25px">
 				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Uygulama web tabanlı olduğu için verilerimiz İnternet'e mi açılacak?</h4>
 				<strong>Elbette HAYIR!</strong>
 				<p>
-					seyhan' ın tarayıcı tabanlı olması bilgilerinizin internete açılacağı anlamına gelmez! Aksine bilgilerinize internet üzerinden erişilebilmesi için ekstra işlemler yapmanız gerekir, web sunucusu kurulumu gibi...
-				</p>
-				<p>
-					seyhan üç farklı yapıda kullanabilirsiniz;
+					seyhan' ın web tabanlı olması bilgilerinizin internete açılacağı anlamına gelmez! Aksine bilgilerinize internet üzerinden erişilebilmesi için ekstra işlemler yapmanız gerekir (web sunucusu kurulumu gibi...) seyhan' ı üç farklı yapıda kullanabilirsiniz;
 					<ol>
-					    <li>Kişisel bilgisayarınıza kurarak bireysel olarak kullanabilirsiniz. Bu durumda bilgilerinize sizden başka kimse erişemez. Bir kullanıcılı bir bilgisayar için Standart kurulum bu şekildedir.</li>
-					    <li>Ofisinizdeki bir bilgisayara / sunucuya kurarak birden fazla kullanıcı tek bir sunucuya bağlanabilirsiniz. Bu durumda ağınıza dahil ettiğiniz kullanıcılardan başkası bilgilerinize erişemez. Bir ve daha fazla kullanıcılı bir bilgisayar için Standart kurulum bu şekildedir.</li>
-					    <li>Uzak bir sunucuya kurabilirsiniz böylece tüm kullanıcılarınız istedikleri her yerden erişebilirler. Bunun için apache ya da nginx gibi bir web sunucusu kullanmanız gerekir. Bu durumda kullanıcı denetimleri için kullanabileceğiniz iki yol var;</li>
+					    <li>Kendi bilgisayarınıza kurarak bireysel olarak kullanabilirsiniz. Bu durumda bilgilerinize sizden başka kimse erişemez. Bir kullanıcılı bir bilgisayar için Standart kurulum bu şekildedir.</li>
+					    <li>Ofisinizdeki ortak bir bilgisayar veya sunucuya kurarak çok kullanıcılı olarak kullanabilirsiniz. Bu durumda ağınıza dahil ettiğiniz kullanıcılardan başkası bilgilerinize erişemez. İki ve daha fazla kullanıcılı bir sistem için kurulum bu şekildedir.</li>
+					    <li>Uzak bir sunucuya (farklı lokasyona) kurabilirsiniz böylece tüm kullanıcılarınız istedikleri her yerden (ev, farklı bir ofis...) erişebilirler. Bunun için <a href="http://httpd.apache.org" target="_blank">apache</a>, <a href="http://nginx.org" target="_blank">nginx</a> veya <a href="https://www.iis.net" target="_blank">iis</a> gibi bir web sunucusu kullanmanız gerekir. Bu durumda kullanıcı denetimleri için kullanabileceğiniz iki yol var;</li>
 					    <ul>
-					        <li>web sunucusunun sağladığı güvenlik ve erişim denetimleri</li>
-					        <li>seyhan' da tanımlanan kullanıcı izinleri</li>
+					        <li>İşletim sisteminin sağladığı güvenlik ve erişim denetimleri</li>
+					        <li>Web sunucusunun sağladığı güvenlik ve erişim denetimleri</li>
+					        <li>seyhan üzerinde verilen kullanıcı hakları</li>
 					    </ul>
 					</ol>
 				</p>
@@ -53,8 +51,8 @@
 			</p>
 
 			<p style="margin-top:25px">
-				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Herhangi bir kısıtlaması var mı, ilerde olabilir mi?</h4>
-				seyhan'ın herhangi bir kısıtlaması yoktur. İlerleyen zamanlarda da kısıtlanmayacaktır. 
+				<h4><i class="icon-upload" style="margin:4px 6px 0 0"></i>Herhangi bir kısıtlaması var mı, ilerleyen zamanlarda olabilir mi?</h4>
+				seyhan'ın herhangi bir kısıtlaması yoktur. İlerleyen zamanlarda da kısıtlanmayacaktır.
 			</p>
 
 			<p style="margin-top:25px">
