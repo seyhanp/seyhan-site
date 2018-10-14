@@ -1,0 +1,48 @@
+User-Agent "Baiduspider/2.0"
+Disallow: /
+
+User-Agent "^bingbot"
+Disallow: /
+
+User-Agent "^Yandex"
+Disallow: /
+
+User-Agent "^Exabot"
+Disallow: /
+
+User-Agent "^Cityreview"
+Disallow: /
+
+User-Agent "^Dotbot"
+Disallow: /
+
+User-Agent "^Sogou"
+Disallow: /
+
+User-Agent "^Sosospider"
+Disallow: /
+
+User-Agent "^Twiceler"
+Disallow: /
+
+User-Agent "^Java"
+Disallow: /
+
+User-Agent "^YandexBot"
+Disallow: /
+
+User-Agent "^bot*"
+Disallow: /
+
+User-Agent "^spider"
+Disallow: /
+
+User-Agent "^crawl"
+Disallow: /
+
+User-Agent "^NG\ 1.x (Exalead)"
+Disallow: /
+
+User-Agent MJ12bot
+Disallow: /
+
