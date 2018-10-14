@@ -1,4 +1,4 @@
-seyhan-site
+The seyhan-site
 ===========
 
-seyhan projesi anasayfa tasarımı
+The design of the main page
